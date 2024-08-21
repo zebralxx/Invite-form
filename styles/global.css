@@ -5,27 +5,27 @@
 }
 
 body {
+  overflow: hidden;
   background-color: var(--shape-background);
 }
 
-.box{
-  margin: 20px 20px 20px 20px;
-  border-radius: 12px;
-  background-color: var(--shape-body);
-  width: 51.25rem;
-  height: 123.81rem;
+main:nth-child(2) {
+  padding-top: 5rem;
 }
 
 :root {
   --font-baloo: "Baloo 2", sans-serif;
   --font-open: "Open Sans", sans-serif;
+  --font-leckerli: "Leckerli One", sans-serif;
 
+
+  --h1: 400 2.5rem/1 var(--font-leckerli);
   --h2: 700 1.75rem/1 var(--font-baloo);
   --h3: 700 1.125rem/1 var(--font-baloo);
 
-  --text-md: 400 1rem/auto var(--font-open);
-  --text-sm: 400 0.875rem/auto var(--font-open);
-  --text-xm: 400 0.75rem/auto var(--font-open);
+  --text-md: 100 1rem/1 var(--font-open);
+  --text-sm: 400 0.875rem/1 var(--font-open);
+  --text-xm: 400 0.75rem/1 var(--font-open);
 
   --brand-light: #59B2FF;
   --brand-mid: #3487CF;
@@ -44,4 +44,9 @@ body {
 
   --text-body: #C8CDD0;
   --text-heading: #F9F9F9;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

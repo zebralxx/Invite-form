@@ -1,4 +1,15 @@
 .text-md {
+  font: var(--text-md);
+  color: var(--text-heading);
+} 
+
+.title-md {
   font: var(--h2);
   color: var(--text-heading);
 }
+
+.font-logo {
+  font: var(--h1);
+  color: #FF598B;
+}
+
