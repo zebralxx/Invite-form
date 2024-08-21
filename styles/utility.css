@@ -1,0 +1,4 @@
+.text-md {
+  font: var(--h2);
+  color: var(--text-heading);
+}
