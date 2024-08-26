@@ -24,8 +24,8 @@ main:nth-child(2) {
   --h3: 700 1.125rem/1 var(--font-baloo);
 
   --text-md: 100 1rem/1 var(--font-open);
-  --text-sm: 400 0.875rem/1 var(--font-open);
-  --text-xm: 400 0.75rem/1 var(--font-open);
+  --text-sm: 400 .875rem/1 var(--font-open);
+  --text-xm: 400 .75rem/1 var(--font-open);
 
   --brand-light: #59B2FF;
   --brand-mid: #3487CF;

@@ -27,56 +27,197 @@
     </header>
 
     <main>
-      <h2 class="title-md">Create yout invite</h2>
+      <div class="main-container">
+        <h2 class="title-md">Create yout invite</h2>
 
-      <form method="post" enctype="multipart/form-data">
-        <fieldset class="event-info">
-          <legend><img src="assets/icons/calendar.svg" alt="">About event</legend>
+        <form method="post" enctype="multipart/form-data">
+          <fieldset class="event-info">
+            <legend><img src="assets/icons/calendar.svg" alt="">About event</legend>
 
-          <div class="input-wrapper">
-            <label for="event-name">Event name</label>
-            <input type="text" name="event-name" id="eventname" placeholder="Event name">
-          </div>
-
-          <div class="input-wrapper">
-            <label for="">Start</label>
-            <input type="date" id="start-date" name="start-date" lang="en-US">
-            <br><br>
-            <label for="">End</label>
-            <input type="date" name="end-date" id="end-date" lang="en-US">
-          </div>
-
-          <div class="radio-wrapper">
-            <div class="radio-inner">
-              <div class="radio-image"></div>
-              <input type="radio" name="period" value="in-person" id="in-person">
-              <img src="assets/icons/building-2.svg" alt="build icon">
-              <label for="in-person">In person</label>
+            <div class="input-wrapper">
+              <label for="event-name">Event name</label>
+              <input type="text" name="event-name" id="eventname" placeholder="Event name">
             </div>
 
-            <div class="radio-wrapper">
-              <div class="radio-inner">
-                <div class="radio-image"></div>
-                <input type="radio" name="online" value="online" id="online">
-                <img src="assets/icons/video.svg" alt="camera icon">
-                <label for="online">Online</label>
+            <div class="input-wrapper">
+              <label for="">Start</label>
+              <input type="date" id="start-date" name="start-date" lang="en-US">
+              <br><br>
+              <label for="">End</label>
+              <input type="date" name="end-date" id="end-date" lang="en-US">
+            </div>
+
+            <div class="input-wrapper">
+                  <div class="together">
+                    <label>Type</label>
+                    <label>Local</label>
+                  </div>
+                <div class="radio-wrapper">
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" name="option" value="in-person" id="in-person">
+                    <label for="in-person">In person</label>
+                  </div>
+
+                  <div class="radio-inner">
+                    <div class="radio-image2"></div>
+                    <input type="radio" name="option" value="online" id="online">
+                    <label for="online">Online</label>
+                  </div>
+                
+                    <div class="input-wrapper">
+                      <input type="text" name="local" id="local" placeholder="Link or Address"> 
+                    </div>
+                </div>
+            </div>
+
+
+                <div class="textarea-wrapper">
+                  <label for="description">Description</label>
+                  <textarea name="description" id="description" cols="30" rows="5" placeholder="Write about the event details"></textarea>
+                </div>
+          </fieldset>
+
+          <fieldset class="personalization">
+            <div class="subtitle">
+              <legend><img src="assets/icons/paintbrush-vertical.svg" alt="">Personalization</legend>
+                <label class="remove-gap">Main color</label>
+            </div>
+              <div class="container">
+                <div class="color-selector">
+                  <label>
+                    <input type="radio" name="color" value="blue">
+                    <span class="color-circle" style="background-color: #59B2FF"></span>
+                  </label>
+                
+                  <label>
+                    <input type="radio" name="color" value="blue">
+                    <span class="color-circle" style="background-color: #6A59FF"></span>
+                  </label>
+
+                  <label>
+                    <input type="radio" name="color" value="blue">
+                    <span class="color-circle" style="background-color: #B259FF"></span>
+                  </label>
+
+                  <label>
+                  <input type="radio" name="color" value="blue">
+                  <span class="color-circle" style="background-color: #FF59F9"></span>
+                  </label>
+
+                  <label>
+                    <input type="radio" name="color" value="blue">
+                    <span class="color-circle" style="background-color: #FF5959"></span>
+                  </label>
+
+                  <label>
+                    <input type="radio" name="color" value="blue">
+                    <span class="color-circle" style="background-color: #FF8B59"></span>
+                  </label>
+
+                  <label>
+                    <input type="radio" name="color" value="blue">
+                    <span class="color-circle" style="background-color: #FFCD59"></span>
+                  </label>
+
+                  <label>
+                    <input type="radio" name="color" value="blue">
+                    <span class="color-circle" style="background-color: #E1FF59"></span>
+                  </label>
+
+                  <label>
+                    <input type="radio" name="color" value="blue">
+                    <span class="color-circle" style="background-color: #59FF91"></span>
+                  </label>
+
+                  <label>
+                    <input type="radio" name="color" value="blue">
+                    <span class="color-circle" style="background-color: #59FFF9"></span>
+                  </label>
+                </div>
+
+                <br>
+
+                <label>Event Theme</label>
+
+                <div class="theme-wrapper">
+
+                    <div class="theme-inner">
+                      <input type="radio" name="theme" id="birthday">
+                      <img src="assets/images/Image.png" alt="">
+                      <label for="birthday">Birthday</label>
+                    </div>
+
+                    <div class="theme-inner">
+                      <input type="radio" name="theme" id="Childish">
+                      <img src="assets/images/Image-1.png" alt="">
+                      <label for="Childish">Childish</label>
+                    </div>
+
+                    <div class="theme-inner">
+                      <input type="radio" name="theme" id="Graduation">
+                      <img src="assets/images/Image-2.png" alt="">
+                      <label for="Graduation">Graduation</label>
+                    </div>
+
+                    <div class="theme-inner">
+                      <input type="radio" name="theme" id="Marriage">
+                      <img src="assets/images/Image-3.png" alt="">
+                      <label for="Marriage">Marriage</label>
+                    </div>
+
+                    <div class="theme-inner">
+                      <input type="radio" name="theme" id="Baby-shower">
+                      <img src="assets/images/Image-4.png" alt="">
+                      <label for="Baby-shower">Baby Shower</label>
+                    </div>
+
+                    <div class="theme-inner">
+                      <input type="radio" name="theme" id="Bridal-shower">
+                      <img src="assets/images/Image-5.png" alt="">
+                      <label for="Bridal-shower">Bridal Shower</label>
+                    </div>
+
+                    <div class="theme-inner">
+                      <input type="radio" name="theme" id="carnival">
+                      <img src="assets/images/Image-6.png" alt="">
+                      <label for="carnival">Carnival</label>
+                    </div>
+
+                    <div class="theme-inner">
+                      <input type="radio" name="theme" id="easter">
+                      <img src="assets/images/Image-7.png" alt="">
+                      <label for="easter">Easter</label>
+                    </div>
+
+                    <div class="theme-inner">
+                      <input type="radio" name="theme" id="Saint-John">
+                      <img src="assets/images/Image-8.png" alt="">
+                      <label for="Saint-John">Saint John</label>
+                    </div>
+
+                    <div class="theme-inner">
+                      <input type="radio" name="theme" id="Halloween">
+                      <img src="assets/images/Image-9.png" alt="">
+                      <label for="Halloween">Halloween</label>
+                    </div>
+
+                    <div class="theme-inner">
+                      <input type="radio" name="theme" id="Christmas">
+                      <img src="assets/images/Image-10.png" alt="">
+                      <label for="Christmas">Christmas</label>
+                    </div>
+
+                    <div class="theme-inner">
+                      <input type="radio" name="theme" id="Other">
+                      <img src="assets/images/Image-11.png" alt="">
+                      <label for="Other">Other</label>
+                    </div>
+                </div>
               </div>
-
-              <div class="input-wrapper">
-                <label for="local">Local</label>
-                <input type="text" name="local" id="local" placeholder="Link or Address"> 
-              </div>
-
-              <div class="input-wrapper">
-                <label for="description">Description</label>
-                <input type="text" name="description" id="description" placeholder="Write about the event details"> 
-              </div>
-        </fieldset>
-
-
+          </fieldset>
       </form>
   </main>
-
 </div>
 
 

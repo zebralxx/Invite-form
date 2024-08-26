@@ -1,0 +1,24 @@
+.color-selector {
+  display: flex;
+  gap: 11.5px;
+}
+
+.color-selector input[type="radio"] {
+  display: none;
+}
+
+.color-circle {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: inline-block;
+  border: .4rem solid var(--shape-button);
+}
+
+.color-circle:hover {
+  border: .4rem solid var(--shape-hover);
+}
+
+input[type="radio"]:checked + .color-circle {
+  outline: 2px solid var(--brand-light);
+}

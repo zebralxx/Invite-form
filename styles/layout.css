@@ -17,7 +17,7 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 95vh;
+  max-height: 45.5rem;
   margin: 20px;
 
   img {
@@ -40,7 +40,6 @@ header {
 
 fieldset {
   border: none;
-
   display: grid;
   gap: 2rem;
 }
@@ -52,4 +51,32 @@ legend {
   font: var(--h3);
   color: var(--text-heading);
   padding-bottom: 1.625rem;
+}
+
+main {
+  overflow: auto;
+  background-color: var(--shape-body);
+  border-radius: 12px;
+  margin: 20px;
+
+  & .main-container {
+    max-width: 36.4rem;
+    margin-left: 8.125rem;
+  } 
+}
+
+.container {
+  max-width: 36.4rem;
+}
+
+.subtitle {
+  padding-top: 3.125rem;
+}
+
+.remove-gap {
+  margin-bottom: 1rem;
+}
+
+.personalization {
+  gap: 0;
 }

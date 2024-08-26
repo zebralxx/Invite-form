@@ -1,0 +1,82 @@
+.together {
+  display: flex;
+  gap: 16.5rem;
+}
+
+label+.radio-wrapper {
+  margin-top: 1rem;
+}
+
+.radio-wrapper {
+  display: grid;
+  grid-template-columns: 25% 25% auto;
+}
+
+.radio-wrapper > :nth-child(3) {
+  margin-left: 1rem;
+}
+
+.radio-inner {
+  border: 1px solid var(--input-stroke);
+  border-radius: .5rem;
+  background-color: var(--input-base);
+
+  display: grid;
+  justify-content: center;
+
+  padding: .9rem 1.9rem;
+  height: 3rem;
+  position: relative;
+
+  & input,
+  & input:focus,
+  & input:hover {
+      all: unset;
+      position: absolute;
+      inset: 0;
+  }
+
+  .radio-image {
+      background-image: url(../../assets/icons/building-2.svg);
+      background-repeat: no-repeat;
+
+      width: 1rem;
+      height: 1rem;
+
+      position: absolute;
+      top: .8rem;
+      left: 1rem;
+  }
+
+  .radio-image2 {
+    background-image: url(../../assets/icons/video.svg);
+    background-repeat: no-repeat;
+
+    width: 1.5rem;
+    height: 1.5rem;
+
+    position: absolute;
+    top: .8rem;
+    left: 1.3rem;
+}
+
+
+  &:hover,
+  &:focus-within {
+      background-color: var(--shape-button);
+  }
+
+  &:has(:checked) {
+
+      & .radio-image {
+          background-image: url(../../assets/icons/building-hover.svg);
+      }
+  }
+
+  &:has(:checked) {
+
+    & .radio-image2 {
+        background-image: url(../../assets/icons/video-hover.svg);
+    }
+}
+}

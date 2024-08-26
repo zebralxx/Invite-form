@@ -7,18 +7,19 @@ select {
     border: 2px solid transparent;
     outline: 1px solid var(--input-stroke);
     background-color: var(--input-base);
+    color: var(--input-placeholder);
 
-    padding: .75rem 1rem;
+    padding: .81rem 1rem;
 
-    font: var(--text)
+    font: var(--text-md)
 }
 
 label {
-  font: var(--text-md);
+  font: var(--text-sm);
   color: var(--text-body);
 
-  display: block;
-  margin-bottom: .81rem;
+  display: flex;
+  margin-bottom: .75rem;
 }
 
 input:focus,
@@ -71,3 +72,5 @@ input {
       display: none;
   }
 }
+
+

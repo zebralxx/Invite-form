@@ -3,6 +3,11 @@
   color: var(--text-heading);
 } 
 
+.text-xm {
+  font: var(--text-xm);
+  color: var(--danger);
+}
+ 
 .title-md {
   font: var(--h2);
   color: var(--text-heading);
@@ -12,4 +17,3 @@
   font: var(--h1);
   color: #FF598B;
 }
-
