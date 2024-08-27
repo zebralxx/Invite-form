@@ -1,6 +1,7 @@
 .toggle-container {
   display: flex;
   align-items: start;
+  padding-top: 1rem;
 }
 
 .toggle-checkbox {
@@ -66,4 +67,29 @@
 .toggle-text::before {
   content: "Dark";
   transition: content 0.4s;
+}
+
+button {
+  border: 0;
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  font: var(--text-md);
+  color: var(--text-heading);
+  padding: .81rem 1.25rem;
+  border-radius: .5rem;
+  cursor: pointer;
+
+  background-color: var(--brand-dark);
+}
+
+button:hover{
+  background-color: var(--brand-light);
+}
+
+.actions-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
 }

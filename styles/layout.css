@@ -80,3 +80,17 @@ main {
 .personalization {
   gap: 0;
 }
+
+.contact-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 2rem;
+}
+
+.title-contact {
+  padding-top: 3.125rem;
+}
+
+.error {
+  padding-top: .5rem;
+}

@@ -17,3 +17,10 @@
   font: var(--h1);
   color: #FF598B;
 }
+
+hr {
+  width: 36.5rem;
+  border: none;
+  border-top: 1px solid var(--input-stroke);
+  margin-top: 3rem;
+}

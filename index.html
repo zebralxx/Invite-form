@@ -245,11 +245,74 @@
 
                         <span class="file-name">No files selected</span>
                         
-                        </div>
                       </div>
                   </div>
                 </div>
           </fieldset>
+
+          <div class="title-contact">
+            <legend><img src="assets/icons/contact.svg" alt="">Contact details</legend>
+          </div>
+
+
+            <div class="input-wrapper">
+              <label for="fullname">Name</label>
+              <input type="text" id="fullname" name="fullname" placeholder="Full Name" required>
+              <div class="error">
+                <img src="assets/icons/circle-alert.svg" alt="alert red icon">
+                <span>Mandatory field</span>
+              </div>
+            </div>
+
+            <fieldset class="contact-details">
+
+            <div class="input-wrapper">
+              <label for="mail">Email</label>
+              <input type="email" id="mail" name="mail" placeholder="exemple@gmail.com">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="phone">Phone</label>
+              <input type="text" id="phone" name="phone" placeholder="(99) 99999-9999 ">
+            </div>
+
+          </fieldset>
+
+          <hr>
+
+          <div class="terms-settings">
+
+          <div class="terms-wrapper checkbox-wrapper">
+            <div class="checkbox-image"></div>
+            <input type="checkbox" name="terms" id="terms">
+            <label for="terms">
+              I have read and agree to the <strong>Terms and Conditions</strong> and <strong>Privacy Policy</strong>
+            </label>
+          </div>         
+          
+          <div class="terms-wrapper checkbox-wrapper">
+            <div class="checkbox-image"></div>
+            <input type="checkbox" name="terms" id="terms">
+            <label for="terms">
+              I agree to receive updates and promotions by email
+            </label>
+          </div>   
+          
+          <div class="terms-wrapper checkbox-wrapper">
+            <div class="checkbox-image"></div>
+            <input type="checkbox" name="terms" id="terms">
+            <label for="terms">
+              I agree to receive updates and promotions by SMS
+            </label>
+          </div>   
+        </div>
+
+        <div class="actions-wrapper">
+          <button class="button" type="button">
+            <img src="assets/icons/ticket.svg" alt="ticket icon">
+            Salvar respostas
+          </button>
+
       </form>
   </main>
 </div>

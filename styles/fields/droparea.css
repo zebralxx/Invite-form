@@ -33,6 +33,7 @@
   padding: 1.75rem 1rem;
 
   position: relative;
+  transition: background-color 0.3s, border-color 0.3s;
 
   & input {
       position: absolute;
@@ -59,4 +60,9 @@
     color: var(--input-placeholder);
     white-space: nowrap;
   }
+}
+
+.dropzone:hover {
+  background-color: var(--shape-hover);
+  border-color: var(--brand-light);
 }
